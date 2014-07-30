@@ -1,0 +1,96 @@
+<div class="second">
+
+  <div class="row">
+<div class="col-md-12">
+<div class="jumbotron">
+  
+  <h3>QUI SOMMES-NOUS ?</h3>
+<br>
+  <p>
+    <small>
+      <b>Kavarilabel</b> est une agence de conseil en stratégie de communication et marketing, édition, campagnes publicitaires, événementiel et multimédia.
+
+En perpetuelle croissance, <b>Kavarilabel</b> accompagne des clients de toute taille, prives ou institutionnels dans leurs réflexions stratégiques et leurs projets de communication.
+<br>
+<b>Kavarilabel</b> met a votre disposition tout le savoir faire et l’expertise de ses équipes pour orchestrer vos projets et vous proposer des solutions qui vous ressembles.
+    </small>
+  </p>
+  
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="jumbotron grad">
+  
+  <h3>NOS OBJECTIFS</h3>
+  <br>
+  <p>
+    <small>Faire de vos ambitions une réalité. <br> Donner une valeur ajoutée a votre 
+    communication.</small>
+  </p>
+  
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="jumbotron grad">
+  <h3>NOTRE EQUIPE</h3><br>
+  <p>
+    <small>Nous avons  une équipe de jeunes locaux  
+talentueux, qui ont une expérience locale 
+du marché.</small>
+
+  </p>
+</div>
+</div>
+
+<div class="col-md-12">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <?php for ($i=0; $i < count($this->slids); $i++) { ?>
+        <li data-target="#carousel-example-generic" data-slide-to="<?php echo $i; ?>" class="<?php if($i==0) echo 'active'; ?>"></li>
+      <?php } ?>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    <?php 
+    
+    $slids = array('070.jpg','060.jpg','070.jpg');
+
+    foreach ($slids as $key => $value) { ?>
+  
+    <div class="item <?php if($key==0) echo 'active'; ?>">
+          <img src="<?php echo $this->baseUrl('/public/images/').$value; ?>">
+        </div>
+
+    <?php } ?>
+  
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+
+<div class="col-md-12">
+<div class="jumbotron">
+  <h3>NOS SERVICES</h3><br>
+  <p>
+    <small>
+      <b>Kavarilabel</b> prend soin de bien examiner les possibilités en proposant un service qui déchargera en totalitP ses clients de l'activité qu'ils souhaitent externaliser. Pour cela, <b>Kavarilabel</b> s'est discipliné à raisonner en termes de << besoin pour client >> et non en termes de << prestation >> </small>
+
+  </p>
+</div>
+</div>
+
+</div>
+  
+</div>

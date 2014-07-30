@@ -1,0 +1,40 @@
+<div class="contenu music">
+
+<div class="container">
+
+	<div class="jumbotron grad">
+	
+		<div class="row">
+		<div class="col-md-6">
+			<img class="img-responsive" src="<?php echo $this->baseUrl('/public/images/lik.jpg'); ?>" alt="">
+		</div>
+		<div class="col-md-6">
+			<h4 align="left">Likita - Par rapport</h4>
+			<p align="left"><small>LIKITA est un groupe fondé fin 2011 et qui compte sortir en 2014, un premier EP intitulé 'Par rapport' qui sera produit par <b>Kavari Label</b>, et sera disponible partout en téléchargement puis en physique à Kinshasa.</small></p>
+			
+			<p align="left">
+				
+				<object 
+				type="application/x-shockwave-flash" 
+				data="<?php echo $this->baseUrl('/public/player/dewplayer.swf'); ?>?mp3=<?php echo $this->baseUrl('/public/music/parrapport.mp3'); ?>" width="400" 
+				height="20" 
+				id="dewplayer">
+
+				<param name="wmode" value="transparent" />
+				<param name="movie" value="parrapport" />
+
+				</object>
+				
+				<br>
+				<a href="<?php echo $this->url(array('id'=>1,'titre'=>'parrapport'),'download',true); ?>" class="btn btn-sm btn-success">download</a></p>
+		</div>
+		</div>
+
+	</div>
+
+	<div class="jumbotron">
+		<a href="<?php echo $this->url(array(),'default',true); ?>">aller à kavarilabel</a>
+	</div>
+
+</div>
+</div>

@@ -1,0 +1,28 @@
+<div class="five">
+  <div class="jumbotron">
+    <h3>NOS PRIX</h3><br>
+<p>
+  Nos prix sont hors concurrence et adaptés au budget du client
+</p>
+    
+    <br>
+    
+    
+  </div>
+<?php $services = array('ETUDE DU MARCHE','CAMPAGNE PUBLICITAIRE','SONDAGE', 'DEVELLOPEMENT  PRODUIT','ROAD SHOW','PENETRATIONS PRODUITS','AFFICHAGE','ROUTIER ET BATIMENT','REALISATION SPOT PUBLICITAIRE','MONITORING','TV','RADIO','PANNEAUX PUBLICITAIRE','VENTE PROMOTION'); ?>
+
+
+ 
+    
+        <div class="jumbotron grad">
+          <h3>NOS SERVICES</h3>
+            <br><br>
+           <div class="row">
+      <?php foreach ($services as $key => $value) { ?>
+      <div class="col-md-6">
+          <p><?php echo $value; ?></p>
+        </div>
+      <?php } ?>
+      </div>
+      </div>
+  </div>

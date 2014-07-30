@@ -1,0 +1,113 @@
+<div class="top">
+
+  <div class="container">
+  
+  <div class="row">
+    <div class="col-md-3">
+      <span class="logoec">KAVARI</span>
+      <img class="img-responsive" id="logo" src="<?php echo $this->baseUrl("/public/images/ka.png"); ?>" alt="">
+    </div>
+    <div class="col-md-9">
+      
+    </div>
+  </div>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li 
+        <?php if ($this->hin!="msk"):  
+        echo 'class="active"'; 
+       endif ?>
+      ><a href="
+        <?php 
+        if ($this->hin=="msk")
+          { 
+            echo $this->url(array(),'default',true); 
+          } 
+          ?>
+      " 
+      <?php 
+        if ($this->hin!="msk")
+          { 
+            echo 'id="homeLink"'; 
+          } 
+          ?>>HOME</a>
+    </li>
+        <li><a href="
+          <?php 
+        if ($this->hin=="msk")
+          { 
+            echo $this->url(array(),'default',true); 
+          } 
+          ?>
+          " 
+          <?php 
+        if ($this->hin!="msk")
+          { 
+            echo 'id="secondLink"'; 
+          } 
+          ?>>QUI NOUS SOMMES</a></li>
+        <li><a href="
+
+          <?php 
+        if ($this->hin=="msk")
+          { 
+            echo $this->url(array(),'default',true); 
+          } 
+          ?>" 
+
+          <?php 
+        if ($this->hin!="msk")
+          { 
+            echo 'id="threeLink"'; 
+          } 
+          ?>
+          >UPCOMING EVENTS</a></li>
+        
+        <li <?php if ($this->hin=="msk"):
+           echo 'class="active"'; 
+        endif ?>>
+          <a href="
+            <?php 
+              echo $this->url(array(),'musique',true); ?>" >
+                            MUSIQUE
+          </a>
+        </li>
+
+        <li><a href="
+          <?php 
+        if ($this->hin=="msk")
+          { 
+            echo $this->url(array(),'default',true); 
+          } 
+          ?>
+          " 
+
+          <?php 
+        if ($this->hin!="msk")
+          { 
+            echo 'id="fourLink"'; 
+          } 
+          ?>
+          >CONTACT</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+</div>

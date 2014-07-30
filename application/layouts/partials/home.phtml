@@ -1,0 +1,126 @@
+<div class="home">
+
+<div class="row">
+<div class="col-md-6">
+<div class="">
+  <div class="row">
+    <div class="col-md-12">
+            <div class="thumbnail">
+              <div class="thumbspan">
+              
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <?php for ($i=0; $i < count($this->slids); $i++) { ?>
+                        <li data-target="#carousel-example-generic" data-slide-to="<?php echo $i; ?>" class="<?php if($i==0) echo 'active'; ?>"></li>
+                      <?php } ?>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                    <?php 
+                    
+                    $slids = array('drc.jpg');
+
+                    foreach ($slids as $key => $value) { ?>
+                  
+                    <div class="item <?php if($key==0) echo 'active'; ?>">
+                          <img src="<?php echo $this->baseUrl('/public/images/').$value; ?>">
+                          
+                        </div>
+
+                    <?php } ?>
+                    
+
+  
+
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+
+              </div>
+              <div class="caption">
+                <h5>UPCOMING</h5>
+                <p><small>Des rendez-vous à ne pas rater.
+                </small>
+                </p>
+              </div>
+            </div>
+          </div>
+  </div>
+  
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="">
+  <div class="row">
+    <div class="col-md-12">
+            <iframe width="100%" height="300" src="//www.youtube.com/embed/nXXVMcyy_Ag" frameborder="0" allowfullscreen></iframe>
+            <a href="" class="btn btn-sm btn-success">télécharger la video</a>
+            <span class="text-success">Nom de l'auter - titre de la video : 50mb</span>
+          </div>
+  </div>
+  
+</div>
+</div>
+</div>
+
+<div class="jumbotron grad">
+  <h3>NOS ACTIVITES</h3><br>
+<div class="row">
+  <div class="col-md-6">
+    
+    <p><b>Marketing.</b><br>
+    <small>
+      Chaque Entreprise est unique. Nous voulons avant tout comprendre la votre, ce qui fait sa différence. Nos consultants vont devenir vos ambassadeurs auprès de vos cibles et des relais d opinion. Ils se doivent d en parler aussi bien que vos commerciaux, et avec autant de passion que vous-même...
+    </small>
+
+    </p>
+    
+  </div>
+
+  <div class="col-md-6">
+    <p><b>Publicité.</b><br>
+    <small>
+      Aujourd’hui une approche plurimédia est inévitable pour créer ou renforcer votre notoriété sur des marchés de plus en plus concurrentiels. Cette approche nécessite des compétences expertes tant en conseil qu’en réalisation et une écoute active et attentive de vos besoins...
+    </small>
+    </p>
+   
+  </div>
+
+  <div class="col-md-12">
+    <br><br>
+   
+    <p><b>Evénements.</b><br>
+      <small>
+        Parce que la commucation passe aussi par l'événement, <b>Kavarilabel</b> se charge de l'organisation de vos salons d'entreprise, lancement de produit, inauguration, défilés, etc.
+      </small></p>
+    
+  </div>
+
+</div>
+</div>
+
+<div class="jumbotron">
+  <h3>NOUS EN BREF</h3><br>
+    
+    <p>
+    <small>
+      <b>Kavarilabel</b> est une agence de conseil en stratégie de communication et marketing, édition, campagnes publicitaires, événementiel et multimédia.
+En perpetuelle croissance, <b>Kavarilabel</b> accompagne des clients de toute taille, prives ou institutionnels dans leurs réflexions stratégiques et leurs projets de communication.
+    </small>
+
+    </p>
+
+</div>
+
+</div>
